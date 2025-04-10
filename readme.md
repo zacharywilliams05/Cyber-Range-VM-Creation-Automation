@@ -1,5 +1,5 @@
 ![image](https://github.com/user-attachments/assets/9ffa3665-97e8-4f1c-a241-c7e1a3ce57f1)</br>
-I wanted to automate the creation of the Windows and Linux VMs for our labs. Working with duck.ai it showed me how to export an ARM template that I could run over and over.
+I wanted to automate the creation of the Windows and Linux VMs for our labs. Working with duck.ai it showed me how to export an ARM template that I could run over and over. It is also important to remember that in a real environment we will be handling hundreds if not thouasands (if not hundreds-of-thousands) endpoints. There is no scalable way to create things manually and we must script to scale.
 
 ____
 # Step Zero
