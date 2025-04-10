@@ -4,7 +4,7 @@ ____
 # Step Zero
 If you do not have the Azure CLI installed install it. For macOS I ran the command:
 
-_ brew update && brew install azure-cli _
+_brew update && brew install azure-cli_
 
 ____
 # Step One
@@ -15,15 +15,15 @@ Although we are working in a lab environment I want to always be thinking secure
 Create the EV (on macOS) we modify the .bash_profile file (located in ~/.bash_profile
 ). It is located in your In terminal navigate to to your user directory type:
 
-nano .bash_profile
+_nano .bash_profile_
 
-Use the arrow key to go to the bottom and add:
+Use the arrow key to go to the bottom and add (include the quotes):
 
-export AZURE_VM_ADMIN_PASSWORD="yourSuperSecretPassword"
+_export AZURE_VM_ADMIN_PASSWORD="yourSuperSecretPassword"_
 
 Hit CTRL + X to close and press Y to save. Then type:
 
-source .bash_profile
+_source .bash_profile_
 
 ____
 # Step Two
@@ -43,10 +43,10 @@ Specify the EV, path to template, run and troubleshoot
 
 We use an Azure CLI command to run the script. Your's will be different but this is what I used:
 
-az deployment group create \
+_az deployment group create \
   --resource-group student-rg-yourcrazysha256hashhere \
   --template-file yourwin10templatenamehere.json \
-  --parameters adminPassword=$AZURE_VM_DEFAULT_PASSWORD
+  --parameters adminPassword=$AZURE_VM_DEFAULT_PASSWORD_
 
 The first line is your resource group.
 The second line is your template-file name. You can specify the full path to the file as well, otherwise you need to move to the directory the file is in when you execute the command.
@@ -62,9 +62,14 @@ The real test of course is to try logging into it with the password you set as t
 
 If you need to go back and see what you put you can type:
 
-printenv
+_printenv_
 
 That will list out all of your EVs.
+
+____
+# Further
+
+You could also save the username as an EV so it also is not hard coded into the script. Additionally this allows you to use a very very difficult password and pass it along to the VM. However, you should still rotate out the password every month or so.
 
 
 
