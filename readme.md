@@ -4,7 +4,7 @@ ____
 Step Zero
 If you do not have the Azure CLI installed install it. For macOS I ran the command:
 
-brew update && brew install azure-cli
+[i]brew update && brew install azure-cli[/i]
 
 ____
 Step One
