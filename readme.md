@@ -50,7 +50,7 @@ Specify the EV, path to template, run and troubleshoot
 We use an Azure CLI command to run the script. Your's will be different but this is what I used:
 
 _az deployment group create \
-  --resource-group student-rg-yourcrazysha256hashhere \
+  --resource-group student-rg-yourcrazysha256here \
   --template-file yourwin10templatenamehere.json \
   --parameters adminPassword=$AZURE_VM_DEFAULT_PASSWORD_
 
