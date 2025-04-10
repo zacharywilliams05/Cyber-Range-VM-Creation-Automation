@@ -57,6 +57,8 @@ Now, go to terminal and run the command annnnddd.... you are probably going to g
 
 Take the error and put it into duck.ai. For me, I had an issue with some kind of "id" parameter (removed it), then an issue with some kind of "guest" parameter (removed it) and a few other things. After 4-5 check-ins with duck.ai the script ran successfully and when I went to the Azure GUI I saw the VM waiting there.
 
+You also may need to verify the file with a website like https://jsonlint.com/ to make sure your commas are in the right spots.
+
 ____
 # Step Four
 Test it out
