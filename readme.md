@@ -87,9 +87,9 @@ Now try creating one for the Linux VM!
 ____
 # Bonus!
 
-Want to delete using CLI as well? Run these:
-az vm delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere --yes
-az network nic delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere-nsg
+Want to delete using CLI as well? Run these:</br>
+_az vm delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere --yes_ </br>
+_az network nic delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere-nsg_
 
 
 
