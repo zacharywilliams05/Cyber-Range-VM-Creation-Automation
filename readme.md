@@ -84,6 +84,12 @@ You could also save the username as an EV so it also is not hard coded into the 
 
 Now try creating one for the Linux VM!
 
+____
+# Bonus!
+
+Want to delete using CLI as well? Run these:
+az vm delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere --yes
+az network nic delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere-nsg
 
 
 
