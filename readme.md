@@ -13,14 +13,16 @@ Create Environment Variable (EV) for the VM admin password.
 
 Although we are working in a lab environment I want to always be thinking securely so rather than hard code the VM password into the script, I chose to make an environment variable. If you don't know what that is please ask duck.ai or google. Basically it is a way for us to save the password outside of the script and then we can pass it to the script when the time comes.
 
-Create the EV (on macOS) we modify the .bash_profile file (located in ~/.bash_profile
-). It is located in your In terminal navigate to to your user directory type:
+To create the EV (on macOS) we modify the .bash_profile file (located in ~/.bash_profile
+):
 
 _nano .bash_profile_
 
 Use the arrow key to go to the bottom and add (include the quotes):
 
 _export AZURE_VM_ADMIN_PASSWORD="yourSuperSecretPassword"_
+
+(You can technically call it whatver you want)
 
 Hit CTRL + X to close and press Y to save. Then type:
 
@@ -33,6 +35,9 @@ Generate an ARM Template
 Log into the Azure GUI and configure a Win10 VM like normal. Create it.
 
 After it is created go to your resource group and on the side click on "Automation" and click "Export Template"
+![image](https://github.com/user-attachments/assets/dad4f24c-2e79-4ac3-8ad3-786a9782f2dd)</br>
+(My GUI is in Japanese, but I think you get the idea)
+
 
 You will get a zip file with the template.json file inside of it. This JSON file should contain all of the parameters you specified in the GUI.
 
