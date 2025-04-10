@@ -52,7 +52,10 @@ The first line is your resource group.
 The second line is your template-file name. You can specify the full path to the file as well, otherwise you need to move to the directory the file is in when you execute the command.
 The third line is the EV we set in Step One.
 
-Now, go to terminal and run the command annnnddd.... you are probably going to get an error of some kind. Take the error and put it into duck.ai. For me, I had an issue with some kind of "id" parameter (removed it), then an issue with some kind of "guest" parameter (removed it) and a few other things. After 4-5 check-ins with duck.ai the script ran successfully and when I went to the Azure GUI I saw the VM waiting there.
+Now, go to terminal and run the command annnnddd.... you are probably going to get an error of some kind. 
+<img width="1673" alt="image" src="https://github.com/user-attachments/assets/a474aaf7-4688-4d6f-9ddb-09ca8458f769" />
+
+Take the error and put it into duck.ai. For me, I had an issue with some kind of "id" parameter (removed it), then an issue with some kind of "guest" parameter (removed it) and a few other things. After 4-5 check-ins with duck.ai the script ran successfully and when I went to the Azure GUI I saw the VM waiting there.
 
 ____
 # Step Four
