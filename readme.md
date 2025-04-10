@@ -82,25 +82,8 @@ ____
 
 You could also save the username as an EV so it also is not hard coded into the script. Additionally this allows you to use a very very difficult password and pass it along to the VM. However, you should still rotate out the password every month or so.
 
+Now try creating one for the Linux VM!
 
 
-
-
-
-
-
-
-
-
- As we are in security I also wanted the script to be secure so that I didn’t need to hardcode login credentials into the script. I am on a MacBook Air. This is what I came up with:
-
-1. Install Azure CLI:
-
-brew update && brew install azure-cli
-
-2. I created environment variables for the Azure login and saved them to the bash_profile file
-
-export AZURE_ADMIN_USERNAME="yourAdminUsername"
-export AZURE_ADMIN_PASSWORD="yourSecurePassword"
 
 
