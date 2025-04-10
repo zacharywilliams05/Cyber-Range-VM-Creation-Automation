@@ -88,8 +88,10 @@ ____
 # Bonus!
 
 Want to delete using CLI as well? Run these:</br>
+
 _az vm delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere --yes_ </br>
 _az network nsg delete --resource-group student-rg-yourcrazysha256here --name yourVMnamehere-nsg_ </br>
+
 If you have created other resources like a public IP, NIC, etc. you will need to create commands for that as well, but just ask duck.ai.
 
 
